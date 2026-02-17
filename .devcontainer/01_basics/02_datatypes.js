@@ -11,7 +11,7 @@ let city = undefined
 console.log([name, age, isMarried, state, city])
 
 // Number => 2 to the power of 53---------------------------------==== typeof 123 is number
-// bigint => for numbers larger than 2 to the power of 53-------------------------------==== typeof 9007199254740991n is bigint
+// bigint => for numbers larger than 2 to the power of 53 - 1-------------------------------==== typeof 9007199254740991n is bigint
 // string => sequence of characters ""-------------------==== typeof "Hitesh" is string
 // boolean => true or false---------==== typeof true is boolean
 
