@@ -73,3 +73,53 @@ console.log(typeof heros) // object because arrays are considered objects in Jav
 console.log(typeof myObj) // object
 console.log(typeof sayHello) // function because functions are a special type of object in JavaScript
 
+
+//************************************************************************************************************************************************ */
+
+//memory allocation for primitive and non-primitive data types
+
+//[stack memory]
+//[heap memory]
+
+// primitive data types are stored in the stack memory, which is a simple and fast memory structure. //
+
+// When a variable is assigned a primitive value, it is stored directly in the stack. 
+// When a variable is assigned a new value, the old value is replaced in the stack.
+
+// non-primitive data types are stored in the heap memory, which is a more complex and slower memory structure. //
+
+// When a variable is assigned a non-primitive value, it is stored in the heap and a reference to that value is stored in the stack. 
+// When a variable is assigned a new value, the reference in the stack is updated to point to the new value in the heap,
+// while the old value remains unchanged in the heap until it is garbage collected.
+
+let myYouTubeChannel = "Hitesh Choudhary" // stored in stack memory
+
+let anotherChannel = myYouTubeChannel // anotherChannel is a copy of the value stored in myYouTubeChannel, both are stored in stack memory
+
+console.log(myYouTubeChannel) // Hitesh Choudhary
+console.log(anotherChannel) // Hitesh Choudhary
+
+anotherChannel = "Code with Hitesh" // anotherChannel is now assigned a new value, the old value in myYouTubeChannel remains unchanged
+
+console.log(myYouTubeChannel) // Hitesh Choudhary
+console.log(anotherChannel) // Code with Hitesh
+
+let userOne = {
+    name: "Hitesh",
+    age: 30
+} // stored in heap memory, a reference to this object is stored in the stack memory
+
+let userTwo = userOne // userTwo is a reference to the same object in heap memory, both userOne and userTwo point to the same object
+
+console.log(userOne) // { name: 'Hitesh', age: 30 }
+console.log(userTwo) // { name: 'Hitesh', age: 30 }
+
+userTwo.name = "Code with Hitesh" // changing the name property of the object through userTwo reference, this change will reflect in both userOne and userTwo because they point to the same object in heap memory
+
+console.log(userOne) // { name: 'Code with Hitesh', age: 30 }
+console.log(userTwo) // { name: 'Code with Hitesh', age: 30 }
+
+// In summary, primitive data types are stored directly in the stack memory and are immutable, 
+// while non-primitive data types are stored in the heap memory and are mutable. 
+// When you assign a primitive value to a variable, it creates a copy of that value, 
+// while when you assign a non-primitive value to a variable, it creates a reference to that value.   
