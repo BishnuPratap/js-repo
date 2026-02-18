@@ -130,8 +130,7 @@ console.log(str3) // "Hello World"
 console.log("1" + 2 + 3) // "123" (string concatenation, the number 2 is converted to a string and concatenated with "1", then the number 3 is converted to a string and concatenated with "12")
 console.log(4 + 1 + 2 + 3) // 10 (all numbers are added together)
 console.log(4 + 1 + 2 + "3") // "73" (the numbers 4, 1, and 2 are added together to get 7, then the number 3 is converted to a string and concatenated with "7")
-console.log(4 + (3 + "8")) // "78" (the number 3 is converted to a string and concatenated with "8", then the number 4 is added to the resulting string "38", resulting in "78"\
-
+console.log(4 + (3 + "8")) // "78" (the number 3 is converted to a string and concatenated with "8", then the number 4 is added to the resulting string "38", resulting in "78"
 
 let num1,num2,num3
 num1 = num2 = num3 = 2+2 // this is called chaining assignment, where multiple variables are assigned the same value in a single statement
