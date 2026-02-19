@@ -35,6 +35,7 @@ const userloggedin = true
 const debitcard = true
 const loggedinfromgoogle = false
 const loggedinfromemail = true
+
 if (userloggedin && debitcard) {
     console.log("Allow to buy course");
 }
