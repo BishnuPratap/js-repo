@@ -26,8 +26,8 @@ function saymyname() {
 function add(a, b) {
     return a + b;
 }
-const sum = add(89, 3) // Output: 8
-// console.log(sum) // Output: 8
+const sum = add(89, 3) 
+// console.log(sum) 
 
 // function addtwonumbers(a, b) {
 //     console.log(a + b);
