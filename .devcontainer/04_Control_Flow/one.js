@@ -43,3 +43,4 @@ if (userloggedin && debitcard) {
 if (loggedinfromgoogle || loggedinfromemail) {
     console.log("User logged in");
 }
+
