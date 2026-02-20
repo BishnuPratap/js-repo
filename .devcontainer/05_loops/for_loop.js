@@ -42,4 +42,5 @@ for (let j =1; j <= 20; j++) {
         continue;
     }
     console.log(`value of j is ${j}`);
+    
 }
