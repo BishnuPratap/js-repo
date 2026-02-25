@@ -18,7 +18,7 @@ const chai = {
 Object.defineProperty(chai, "name", {
     enumerable: false
 });
-
+    
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
 for (let [key, value] of Object.entries(chai)) {
