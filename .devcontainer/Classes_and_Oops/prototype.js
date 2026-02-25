@@ -10,7 +10,7 @@ let heroPower = {
     Hulk: "smash"
 }
 
-Object.prototype.hitesh = function() {
+Object.prototype.hitesh = function() { // here prototype means that we are adding a method to the Object prototype, which means that all objects will inherit this method and can use it.
     console.log("hitesh is present in all objects");
 }
 
