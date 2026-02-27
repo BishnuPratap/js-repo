@@ -22,4 +22,4 @@ class User {
 
 const hitesh = new User("hitesh@gmail.com", "1236");
 console.log(hitesh.password); // "1236" in uppercase → "1236" (numbers stay same)
-console.log(hitesh.email); 
+console.log(hitesh.email);
